@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_home"
+    tools:context=".activities.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/topContainer">
+    <EditText
+        android:id="@+id/edtSearch"
+        android:hint="@string/search_hint"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:textColor="@android:color/black"
+        android:layout_toLeftOf="@+id/imgSearch"/>
+
+    <ImageView
+        android:id="@+id/imgSearch"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:src="@android:drawable/ic_menu_search"
+        android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topContainer"
+        android:id="@+id/lstSearchResult"
+        android:dividerHeight="1dip"
+        android:divider="@android:color/darker_gray"></ListView>
+</RelativeLayout>

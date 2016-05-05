@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WikiImageSearch</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="search_url">https://en.wikipedia.org/w/api.php?action=query&amp;prop=pageimages&amp;format=json&amp;piprop=thumbnail&amp;pithumbsize=50&amp;pilimit=50generator=prefixsearch&amp;titles=%s</string>
+
+    <string name="search_hint">Enter search text here</string>
+    <string name="loading_search">Loading search result. Please wait.</string>
+    <string name="search_error">Problem in search. Please try again later.</string>
+</resources>
